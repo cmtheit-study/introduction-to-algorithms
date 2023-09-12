@@ -1,1 +1,1 @@
-cat `find . | grep '\.py$'` | wc -l
+find . -type f \( -name "*.py" -o -name "*.js" \) -exec cat {} \; | wc -l
